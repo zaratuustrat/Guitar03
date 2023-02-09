@@ -1,0 +1,135 @@
+.page__reviews
+
+.reviews
+  padding: 240px 0 150px
+
+.reviews__container
+
+.reviews__titlle
+.reviews__titlle:not(:last-child)
+  margin-bottom: 110px
+
+.swiper-reviews
+
+.swiper-wrapper
+
+.swiper-slide
+  display: flex
+  align-items: center
+  // position: relative
+
+.swiper-slide__picture,
+.swiper-slide__body
+  flex: 0 1 50%
+
+.swiper-slide__picture
+  display: flex
+  justify-content: center
+  align-items: center
+
+//  overflow: hidden
+
+.swiper-slide__image
+  width: 326px
+  height: 341px
+  position: relative
+  // padding-bottom: 57%
+
+.swiper-slide__image:before
+  content: ''
+  position: absolute
+  width: 284.72px
+  height: 257.89px
+  left: -70px
+  top: 60px
+  background: #FF6428
+  border-radius: 40px 0px 400px 400px
+  transform: rotate(-7.72deg)
+  // z-index: -1
+
+.swiper-slide__image img
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  // object-fit: cover
+  border-radius: 50%
+  overflow: center
+  z-index: 5
+.swiper-slide__content
+  max-width: 524px
+  margin: 0 auto
+  position: relative
+.swiper-slide__text
+  font-weight: 400
+  font-size: 24px
+  line-height: 160%
+  color: #666666
+.swiper-slide__text:not(:last-child)
+  margin-bottom: 56px
+.slide-swiper-reviews__text p:not(:last-child)
+  margin-bottom: 15px
+
+.slide-swiper__author
+
+.slide-swiper__name
+  font-weight: 600
+  font-size: 24px
+  line-height: 160%
+  color: #000000
+.slide-swiper__name:not(:last-child)
+  margin-bottom: 8px
+
+.slide-swiper__position
+  font-size: 18px
+  line-height: 160%
+  letter-spacing: 0.08em
+  color: #868686
+
+.swiper-pagination
+  display: flex
+  justify-content: flex-end
+  transform: translate(0px,-100%)
+
+  .swiper-pagination-bullet
+    opacity: 1
+    background: #C4C4C4
+    border-radius: 20px
+    flex: 0 0 10px
+    height: 16px
+    transition: all 0.3s ease 0s
+  .swiper-pagination-bullet-active
+    background: #FF6428
+    flex: 0 0 24px
+/*pc*/ 
+@media ( max-width: 1087px)
+  .swiper-slide
+    flex-direction: column
+  .swiper-slide__picture
+    margin-bottom: 20px
+/*tablet*/ 
+@media ( max-width: 991.98px)
+
+/*mobile*/
+@media ( max-width: 767.98px)
+  .reviews
+    padding: 130px 0
+  .swiper-slide__image:before
+    left: -45px
+  .reviews__titlle:not(:last-child)
+    margin-bottom: 30px
+  // .swiper-slide__picture
+  //   overflow: hidden
+@media ( max-width: 479.98px )
+  .swiper-slide__image
+    width: 261px
+    height: 259px
+    // overflow: hidden
+  .swiper-slide__image:before
+    width: 259.72px
+    height: 165.89px
+    left: 0
+    overflow: hidden
+    top: 24px
+    border-radius: 40px 108px 400px 400px

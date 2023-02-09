@@ -1,0 +1,119 @@
+.page__main
+
+.main
+
+.main__container
+
+.main__wrrap
+  display: flex
+
+.main__content,
+.main__decor
+  flex: 0 1 50%
+
+.main__content
+  display: flex
+  flex-direction: column
+  align-self: center
+  padding: 235px 20px 155px 0
+.main__title
+  font-family: 'CalSans'
+  font-style: normal
+  font-weight: 600
+  font-size: 56px
+  line-height: 67px
+  color: #121212
+  span
+    color: #FF6428
+.main__title:not(:last-child)
+  margin-bottom: 16px
+
+.main__subtitle
+  font-weight: 500
+  font-size: 16px
+  line-height: 24px
+  color: #666666
+  max-width: 398px
+.main__subtitle:not(:last-child)
+  margin-bottom: 33px
+
+.main__actions
+  display: flex
+  align-items: center
+  gap: 40px
+.main__button
+  text-align: center
+  font-weight: 600
+  line-height: 24px
+  padding: 17.5px 48px
+  color: #FFFFFF
+  background: #FF6428
+  border-radius: 40px
+  transition: all 0.3s ease 0s
+  &:hover
+    background: #f84c08
+.main__items
+  display: flex
+  align-items: center
+  gap: 28px
+
+.main__item-icon
+
+.main__item-icon:hover img
+  max-width: 100%
+  transform: scale(1.1)
+  transition: all 0.3s ease 0s
+
+.main__decor
+  padding-left: 47px
+
+.main__image
+  position: relative
+  margin-right: -135px
+  max-width: 672px
+  img
+    max-width: 100%
+.main__image:before
+  content: ''
+  position: absolute
+  right: 36.6%
+  bottom: 0
+  transform: translate(0,50%)
+  width: 80px
+  height: 80px
+
+  background: url('../img/main/decor.svg') 0 0 no-repeat
+/*pc*/ 
+@media ( max-width: 1087px)
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .main__content
+    padding: 160px 20px 155px 0
+  .main__decor
+    padding-left: 0
+/*mobile*/
+@media ( max-width: 767.98px)
+
+  .main
+    &__content
+      padding: 80px 0
+      flex: 1 1 100%
+    &__decor
+      display: none
+    &__title
+      font-size: 44px
+@media ( max-width: 479.98px )
+  .main
+    &__actions
+      flex-direction: column
+      gap: 20px
+    &__title
+      text-align: center
+      line-height: 55px
+    &__subtitle:not(:last-child)
+      margin-bottom: 20px
+    &__button
+      width: 100%
+    &__content
+      padding: 80px 0 20px

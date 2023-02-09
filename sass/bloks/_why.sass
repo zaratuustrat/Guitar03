@@ -1,0 +1,66 @@
+.page__
+
+.why
+  padding: 95px 0
+  background: #121212
+.why__container
+
+  .why__titlle-dark
+    color: #ffff
+    margin-bottom: 75px
+.title
+
+.why__items
+  display: grid
+  grid-template-columns: repeat(3,auto)
+  justify-content: space-between
+  gap: 30px
+
+.why__item
+
+.item-why
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  padding: 35px
+.item-why__icon
+  padding: 20px
+
+  background: #262626
+  border-radius: 20px
+.item-why__icon:not(:last-child)
+  margin-bottom: 40px
+
+.item-why__title
+  font-weight: 600
+  font-size: 18px
+  line-height: 27px
+  letter-spacing: 0.08em
+  text-transform: uppercase
+  color: #FFFFFF
+.item-why__title:not(:last-child)
+  margin-bottom: 12px
+
+.item-why__text
+  font-weight: 400
+  font-size: 14px
+  line-height: 21px
+  text-align: center
+  text-transform: capitalize
+  max-width: 230px
+  color: #666666
+/*pc*/ 
+@media ( max-width: 1087px)
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .why__items
+    grid-template-columns: repeat(1,1fr)
+    gap: 0
+  .item-why__text
+    max-width: 100%
+
+@media ( max-width: 479.98px )
+  .why
+    padding: 50px 0 10px

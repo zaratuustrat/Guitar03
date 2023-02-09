@@ -1,0 +1,94 @@
+.page__store
+
+.store
+  padding: 60px 0
+
+.store__container
+
+.store__title:not(:last-child)
+  margin-bottom: 86px
+
+.new-store:not(:last-child)
+  margin-bottom: 96px
+
+.content-store
+  display: flex
+  justify-content: space-between
+  margin-bottom: 32px
+
+.new-store__title
+.store-header
+  font-weight: 600
+  font-size: 20px
+  line-height: 30px
+  letter-spacing: 0.08em
+  color: #121212
+  text-transform: uppercase
+.new-store__all
+.all-store
+  font-weight: 500
+  font-size: 20px
+  line-height: 30px
+  color: #868686
+  &:hover
+    text-decoration: underline
+
+.new-store__items
+.items-store
+  display: flex
+  justify-content: space-between
+  gap: 54px
+
+  // flex-wrap: wrap
+
+  // display: grid
+  // grid-template-columns: repeat(3, 1fr)
+  // gap: 54px
+
+.item-store
+  display: flex
+  flex-direction: column
+  // display: grid
+.item-store__image
+  margin-bottom: 40px
+  img
+    max-width: 100%
+.item-store__image:hover img
+  max-width: 100%
+  transform: scale(1.1)
+  transition: all 0.3s ease 0s
+.item-store__title
+  line-height: 24px
+  color: #121212
+  margin-bottom: 7px
+  &:hover
+    text-decoration: underline
+.item-store__price
+  font-weight: 400
+  font-size: 14px
+  line-height: 21px
+  color: #666666
+/*pc*/ 
+@media ( max-width: 1087px)
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .store
+    padding: 30px 0
+  .items-store
+    flex-wrap: wrap
+    gap: 30px
+    justify-content: center
+  .item-store
+    align-items: center
+  .item-store__image
+    margin: 0
+/*mobile*/
+@media ( max-width: 767.98px)
+  .store__title:not(:last-child)
+    margin-bottom: 40px
+
+@media ( max-width: 479.98px )
+  .content-store
+    flex-direction: column
+    gap: 20px

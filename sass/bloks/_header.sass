@@ -1,0 +1,59 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 50
+.header__container
+
+.header__wrrap
+  display: flex
+  align-items: center
+  gap: 131px
+  min-height: 131px
+
+.header__logo:hover.header__logo img
+  max-width: 100%
+  transform: scale(1.1)
+  transition: all 0.3s ease 0s
+
+.header__menu
+
+.menu
+
+.menu__list
+  display: flex
+  gap: 56px
+
+.menu__item
+  line-height: 24px
+.menu__link
+  color: rgba(18, 18, 18, 0.4)
+  &:hover
+    text-decoration: underline
+
+/*pc*/ 
+@media ( max-width: 1087px)
+  .menu
+    padding: 10px 15px
+    background: rgba(255, 255, 255, 0.527)
+    border-radius: 10px
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .header__wrrap
+    gap: 70px
+/*mobile*/
+@media ( max-width: 767.98px)
+  .header__wrrap
+    min-height: 80px
+    gap: 20px
+  .menu__list
+    gap: 20px
+@media ( max-width: 479.98px )
+  .header
+    &__logo
+      flex: 0 0 28px
+      overflow: hidden
+    &__wrrap
+      gap: 0px

@@ -1,0 +1,39 @@
+.page__favorite
+
+.favorite
+
+.favorite__container
+  display: flex
+  align-items: center
+.favorite__content,
+.favorite__image
+  flex: 0 1 50%
+.favorite__content
+  .favorite__titlle
+    max-width: 484px
+    text-align: start
+.favorite__titlle:not(:last-child)
+  margin-bottom: 60px
+.apps-favorite
+  display: flex
+  align-items: center
+  gap: 26px
+
+.apps-favorite__item:hover img
+  max-width: 100%
+  transform: scale(1.1)
+  transition: all 0.3s ease 0s
+
+.favorite__image img
+  max-width: 100%
+/*mobile*/
+@media ( max-width: 767.98px)
+  .favorite__container
+    flex-direction: column
+  .apps-favorite
+    justify-content: center
+
+@media ( max-width: 479.98px )
+  .apps-favorite
+    flex-direction: column
+    gap: 20px
